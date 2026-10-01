@@ -267,3 +267,425 @@ nav a {
     font-size: 14px;
     line-height: 1.6;
 }
+/* =========================================================
+   WHAT WE EXAMINE — EVIDENCE MAP
+   ========================================================= */
+
+.evidence-section {
+    padding: 140px 0;
+    background: #0d0d0d;
+}
+
+.evidence-container {
+    width: min(1180px, calc(100% - 48px));
+    margin: 0 auto;
+}
+
+
+/* SECTION HEADER */
+
+.evidence-header {
+    max-width: 760px;
+    margin-bottom: 100px;
+}
+
+.evidence-header .section-label {
+    display: block;
+    margin-bottom: 22px;
+    font-size: 0.72rem;
+    font-weight: 600;
+    letter-spacing: 0.22em;
+    color: #9ca3af;
+}
+
+.evidence-header h2 {
+    margin: 0 0 24px;
+    font-size: clamp(2.2rem, 4vw, 4rem);
+    line-height: 1.04;
+    letter-spacing: -0.035em;
+    color: #f5f5f5;
+}
+
+.evidence-header p {
+    max-width: 650px;
+    margin: 0;
+    font-size: 1rem;
+    line-height: 1.7;
+    color: #a8a8a8;
+}
+
+
+/* EVIDENCE MAP */
+
+.evidence-map {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(340px, 1.35fr) minmax(0, 1fr);
+    grid-template-areas:
+        "one vehicle two"
+        "three vehicle four"
+        ". five .";
+    column-gap: 64px;
+    row-gap: 72px;
+    align-items: center;
+    margin-bottom: 48px;
+}
+
+.evidence-01 {
+    grid-area: one;
+}
+
+.evidence-02 {
+    grid-area: two;
+}
+
+.evidence-03 {
+    grid-area: three;
+}
+
+.evidence-04 {
+    grid-area: four;
+}
+
+.evidence-05 {
+    grid-area: five;
+    text-align: center;
+}
+
+
+/* EVIDENCE ITEMS */
+
+.evidence-item {
+    position: relative;
+}
+
+.evidence-number {
+    display: block;
+    margin-bottom: 16px;
+    font-size: 0.72rem;
+    letter-spacing: 0.18em;
+    color: #777;
+}
+
+.evidence-item h3 {
+    margin: 0 0 14px;
+    font-size: 1.05rem;
+    line-height: 1.3;
+    color: #f2f2f2;
+}
+
+.evidence-item p {
+    margin: 0 0 18px;
+    font-size: 0.88rem;
+    line-height: 1.65;
+    color: #999;
+}
+
+.evidence-method {
+    display: block;
+    font-size: 0.65rem;
+    font-weight: 600;
+    letter-spacing: 0.16em;
+    color: #c3c3c3;
+}
+
+
+/* VEHICLE PLACEHOLDER */
+
+/* VEHICLE TECHNICAL PROFILE */
+
+.evidence-vehicle {
+    grid-area: vehicle;
+    min-height: 360px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+
+}
+/* VEHICLE ANALYSIS FRAME */
+
+.vehicle-analysis-frame {
+    position: absolute;
+    inset: 46px -8%;
+    pointer-events: none;
+}
+
+.frame-corner {
+    position: absolute;
+    width: 26px;
+    height: 26px;
+    opacity: 0.7;
+}
+
+.frame-tl {
+    top: 0;
+    left: 0;
+    border-top: 1px solid #666;
+    border-left: 1px solid #666;
+}
+
+.frame-tr {
+    top: 0;
+    right: 0;
+    border-top: 1px solid #666;
+    border-right: 1px solid #666;
+}
+
+.frame-bl {
+    bottom: 0;
+    left: 0;
+    border-bottom: 1px solid #666;
+    border-left: 1px solid #666;
+}
+
+.frame-br {
+    bottom: 0;
+    right: 0;
+    border-bottom: 1px solid #666;
+    border-right: 1px solid #666;
+}
+
+.evidence-node {
+    position: absolute;
+    width: 5px;
+    height: 5px;
+    border: 1px solid #888;
+    border-radius: 50%;
+    background: #0d0d0d;
+}
+
+.node-left-top {
+    left: -2px;
+    top: 28%;
+}
+
+.node-right-top {
+    right: -2px;
+    top: 28%;
+}
+
+.node-left-bottom {
+    left: -2px;
+    bottom: 28%;
+}
+
+.node-right-bottom {
+    right: -2px;
+    bottom: 28%;
+}
+
+.node-bottom {
+    left: 50%;
+    bottom: -2px;
+    transform: translateX(-50%);
+}
+
+.evidence-vehicle-image {
+    display: block;
+    width: 145%;
+    max-width: none;
+    height: auto;
+    object-fit: contain;
+}
+
+/* RECONCILIATION */
+
+.reconciliation-block {
+    position: relative;
+    max-width: 900px;
+    margin: 0 auto 80px;
+    padding-top: 56px;
+    border-top: 1px solid #292929;
+    text-align: center;
+}
+
+.reconciliation-number {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 0.72rem;
+    letter-spacing: 0.20em;
+    color: #777;
+}
+
+.reconciliation-heading .section-label {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 0.62rem;
+    font-weight: 600;
+    letter-spacing: 0.22em;
+    color: #777;
+}
+
+.reconciliation-heading h3 {
+    margin: 0 0 18px;
+    font-size: clamp(1.5rem, 2.4vw, 2.2rem);
+    line-height: 1.1;
+    color: #f5f5f5;
+}
+
+.reconciliation-block > p {
+    max-width: 680px;
+    margin: 0 auto;
+    font-size: 0.88rem;
+    line-height: 1.7;
+    color: #999;
+}
+
+
+/* EVIDENCE RECONCILIATION FLOW */
+
+.evidence-flow {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 14px;
+    margin-top: 30px;
+    font-size: 0.66rem;
+    font-weight: 600;
+    letter-spacing: 0.13em;
+    color: #8b8b8b;
+}
+
+.flow-result {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    margin-top: 18px;
+}
+
+.flow-result span {
+    color: #666;
+    font-size: 1rem;
+    line-height: 1;
+}
+
+.flow-result strong {
+    font-size: 0.72rem;
+    letter-spacing: 0.18em;
+    color: #e6e6e6;
+}
+
+
+/* SCOPE */
+
+.scope-block {
+    max-width: 760px;
+    margin: 48px auto 0;
+    padding-top: 28px;
+    border-top: 1px solid #292929;
+}
+
+.scope-principles {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin-bottom: 24px;
+}
+
+.scope-principles span {
+    padding: 0 18px;
+    border-right: 1px solid #333;
+    text-align: center;
+    font-size: 0.66rem;
+    font-weight: 600;
+    line-height: 1.5;
+    letter-spacing: 0.14em;
+    color: #c2c2c2;
+}
+
+.scope-principles span:first-child {
+    padding-left: 0;
+}
+
+.scope-principles span:last-child {
+    padding-right: 0;
+    border-right: none;
+}
+
+.scope-block > p {
+    max-width: 720px;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 0.78rem;
+    line-height: 1.7;
+    color: #777;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 900px) {
+
+    .evidence-section {
+        padding: 100px 0;
+    }
+
+    .evidence-header {
+        margin-bottom: 70px;
+    }
+
+    .evidence-map {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "vehicle"
+            "one"
+            "two"
+            "three"
+            "four"
+            "five";
+        gap: 0;
+        margin-bottom: 90px;
+    }
+
+    .evidence-vehicle {
+        min-height: 260px;
+        margin-bottom: 30px;
+    }
+
+    .evidence-item,
+    .evidence-05 {
+        padding: 32px 0;
+        border-bottom: 1px solid #292929;
+        text-align: left;
+    }
+
+    .reconciliation-block {
+        padding: 54px 24px;
+    }
+
+    .scope-principles {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 0;
+    }
+
+    .scope-principles span {
+        padding: 16px;
+        border-bottom: 1px solid #292929;
+    }
+
+    .scope-principles span:nth-child(2) {
+        border-right: none;
+    }
+}
+
+
+@media (max-width: 560px) {
+
+    .evidence-container {
+        width: min(100% - 32px, 1180px);
+    }
+
+    .evidence-header h2 {
+        font-size: 2.15rem;
+    }
+
+    .scope-principles {
+        grid-template-columns: 1fr;
+    }
+
+    .scope-principles span {
+        border-right: none;
+    }
+}
+
+}
